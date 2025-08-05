@@ -1,0 +1,11 @@
+{
+  "rootDir": "../",
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "testEnvironment": "node",
+  "testMatch": ["<rootDir>/apps/**/src/**/*.spec.ts"],
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "collectCoverageFrom": ["apps/**/src/**/*.(t|j)s", "!apps/**/src/**/*.spec.ts", "!apps/**/src/**/*.e2e-spec.ts"],
+  "testPathIgnorePatterns": ["/node_modules/", "/dist/"]
+}

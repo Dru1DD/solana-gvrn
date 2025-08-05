@@ -4,7 +4,7 @@ import { InjectSolanaService } from '@solana-gvrn/solana/decorators';
 
 @Controller('solana')
 export class SolanaController {
-  constructor(@InjectSolanaService() private readonly solanaService: SolanaService) { }
+  constructor(@InjectSolanaService() private readonly solanaService: SolanaService) {}
 
   @Get('transaction-count')
   async getTransactionCount(@Query('slot') slot: string) {
