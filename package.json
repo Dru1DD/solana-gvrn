@@ -1,0 +1,17 @@
+{
+  "name": "solana-gvrn",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "concurrently -k -n BACKEND,CLIENT -c yellow,cyan \"pnpm --filter backend start:dev\" \"pnpm --filter client dev\"",
+    "dev:backend": "pnpm --filter backend start:dev",
+    "dev:client": "pnpm --filter client dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.5.2",
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
