@@ -3,9 +3,9 @@ import { api } from '@/lib/api-client';
 import { Transactions } from '@/types/transactions';
 
 const useLatestTransactionQuery = () => {
-    return useQuery({
+    return useQuery<Transactions>({
         queryKey: ['current-user'],
-        queryFn: () => api.get<Transactions>('/transaction-from-latest')
+        queryFn: async () => (await api.get('/solana/transaction-from-latest')).data,
     });
 };
 

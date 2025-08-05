@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
@@ -20,7 +20,7 @@
 }
 
 body {
-  background: var(--background);
+  background-image: radial-gradient(circle at 50% 50%, rgba(120, 119, 198, 0.1), transparent);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
